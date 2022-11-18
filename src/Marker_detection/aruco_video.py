@@ -89,9 +89,9 @@ while True:
 			print("TopRight {} BottomRight {} BottomLeft {} TopLeft {}".format(topRight,bottomRight,bottomLeft,topLeft))
 
 			#detecting the pose of the markers
-			rvec, tvec, markerPoints = cv2.aruco.estimatePoseSingleMarkers(corners, 0.02)
-			(rvec - tvec).any()
-			cv2.aruco.drawAxis(frame, rvec, tvec, 0.01)
+			#rvec, tvec, markerPoints = cv2.aruco.estimatePoseSingleMarkers(corners, 0.02)
+			#(rvec - tvec).any()
+			#cv2.aruco.drawAxis(frame, rvec, tvec, 0.01)
 
 			# draw the bounding box of the ArUCo detection
 			cv2.line(frame, topLeft, topRight, (0, 255, 0), 2)
